@@ -65,8 +65,6 @@ app.post('/users', function(req, res) {
 });
 
 app.post('/sessions/create', function(req, res) {
-  console.log('REQ!');
-  console.log(req);
   var userScheme = getUserScheme(req);
 
   if (!userScheme.username || !req.body.password) {
